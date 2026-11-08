@@ -83,18 +83,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Organization — Community Impact Platform" },
+      { title: "Addis Hiwot Charity Association" },
       {
         name: "description",
         content:
-          "A community-first platform for transparent programs, verified impact reporting and support opportunities.",
+          "Addis Hiwot Charity Association is a nonprofit community platform for health, education, youth empowerment and transparent impact reporting.",
       },
-      { name: "author", content: "Organization" },
-      { property: "og:title", content: "Organization — Community Impact Platform" },
+      { name: "author", content: "Addis Hiwot Charity Association" },
+      { property: "og:title", content: "Addis Hiwot Charity Association" },
       {
         property: "og:description",
         content:
-          "Transparent programs, verified impact reporting and support opportunities for community care and development.",
+          "Transparent programming, verified impact reporting and community support for health, education, and youth empowerment.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -110,7 +110,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/logo.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/logo.png" },
     ],
   }),
   shellComponent: RootShell,
