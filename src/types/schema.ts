@@ -92,7 +92,7 @@ export interface ImpactData {
 export type GalleryCategory =
   | "Education"
   | "Shelter"
-  | "Healthcare"
+  | "HealthCare"
   | "Events"
   | "General";
 

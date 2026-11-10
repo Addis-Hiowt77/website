@@ -4,8 +4,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import type { GalleryData } from "@/types/schema";
 import { cn } from "@/lib/utils";
 
-const FILTERS = ["All", "Healthcare", "Education", "Shelter", "Events"] as const;
-type Filter = (typeof FILTERS)[number];
+const FILTERS = [
+  { value: "All", label: "All" },
+  { value: "HealthCare", label: "Healthcare" },
+  { value: "Education", label: "Education" },
+  { value: "Shelter", label: "Shelter" },
+  { value: "Events", label: "Events" },
+] as const;
+type Filter = (typeof FILTERS)[number]["value"];
 
 export function GalleryFilterGrid({ data }: { data: GalleryData }) {
   const [filter, setFilter] = useState<Filter>("All");
@@ -25,18 +31,18 @@ export function GalleryFilterGrid({ data }: { data: GalleryData }) {
         >
           {FILTERS.map((option) => (
             <button
-              key={option}
+              key={option.value}
               role="tab"
-              aria-selected={filter === option}
-              onClick={() => setFilter(option)}
+              aria-selected={filter === option.value}
+              onClick={() => setFilter(option.value)}
               className={cn(
                 "shrink-0 rounded-badge border px-4 py-2 text-sm font-semibold transition-colors",
-                filter === option
+                filter === option.value
                   ? "border-primary bg-primary text-primary-foreground shadow-sm"
                   : "border-border bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground",
               )}
             >
-              {option}
+              {option.label}
             </button>
           ))}
         </div>

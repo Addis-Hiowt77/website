@@ -16,7 +16,7 @@ import {
 import { supabase } from "@/integrations/supabase/client";
 import type { Tables } from "@/integrations/supabase/types";
 import { GALLERY_BUCKET } from "@/lib/storageBuckets";
-import { GALLERY_CATEGORIES } from "@/lib/adminConstants";
+import { GALLERY_CATEGORY_OPTIONS } from "@/lib/adminConstants";
 import { EmptyState, LoadingRows, PanelHeader, formatDate } from "./primitives";
 import { cn } from "@/lib/utils";
 
@@ -238,9 +238,9 @@ export function GalleryManager() {
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                {GALLERY_CATEGORIES.map((option) => (
-                  <SelectItem key={option} value={option}>
-                    {option}
+                {GALLERY_CATEGORY_OPTIONS.map((option) => (
+                  <SelectItem key={option.value} value={option.value}>
+                    {option.label}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -254,9 +254,9 @@ export function GalleryManager() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="All">All categories</SelectItem>
-                {GALLERY_CATEGORIES.map((option) => (
-                  <SelectItem key={option} value={option}>
-                    {option}
+                {GALLERY_CATEGORY_OPTIONS.map((option) => (
+                  <SelectItem key={option.value} value={option.value}>
+                    {option.label}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -300,9 +300,9 @@ export function GalleryManager() {
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
-                      {GALLERY_CATEGORIES.map((option) => (
-                        <SelectItem key={option} value={option}>
-                          {option}
+                      {GALLERY_CATEGORY_OPTIONS.map((option) => (
+                        <SelectItem key={option.value} value={option.value}>
+                          {option.label}
                         </SelectItem>
                       ))}
                     </SelectContent>

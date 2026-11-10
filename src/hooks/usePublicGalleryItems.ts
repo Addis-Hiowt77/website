@@ -7,7 +7,7 @@ const KNOWN_CATEGORIES: readonly GalleryCategory[] = [
   "General",
   "Education",
   "Shelter",
-  "Healthcare",
+  "HealthCare",
   "Events",
 ];
 

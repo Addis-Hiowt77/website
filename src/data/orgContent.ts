@@ -91,7 +91,7 @@ export const orgContent = {
       {
         id: "p1",
         title: "Healthcare Support",
-        categoryTag: "Healthcare",
+        categoryTag: "HealthCare",
         shortDescription:
           "Helping patients who cannot afford treatment and mobilizing blood donors.",
         fullDescription:
@@ -258,7 +258,7 @@ export const orgContent = {
     items: [
       { id: "g1", title: "Christmas (Gena) with neighbors in need", categoryTag: "Community", mediaUri: genaChristmasImage, isVideo: false },
       { id: "g2", title: "Building the Youth Center", categoryTag: "Youth", mediaUri: youthCenterImage, isVideo: false },
-      { id: "g3", title: "Blood donation campaign", categoryTag: "Healthcare", mediaUri: bloodDonationImage, isVideo: false },
+      { id: "g3", title: "Blood donation campaign", categoryTag: "HealthCare", mediaUri: bloodDonationImage, isVideo: false },
       { id: "g4", title: "Anniversary with University of Gondar officials", categoryTag: "Events", mediaUri: anniversaryImage, isVideo: false },
     ] as {
       id: string;

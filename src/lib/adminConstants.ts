@@ -40,10 +40,12 @@ export const RECEIPT_STATUSES = [
 ] as const;
 export type ReceiptStatus = (typeof RECEIPT_STATUSES)[number];
 
-export const GALLERY_CATEGORIES = [
-  "Education",
-  "Shelter",
-  "Healthcare",
-  "Events",
-  "General",
+export const GALLERY_CATEGORY_OPTIONS = [
+  { value: "Education", label: "Education" },
+  { value: "Shelter", label: "Shelter" },
+  { value: "HealthCare", label: "Healthcare" },
+  { value: "Events", label: "Events" },
+  { value: "General", label: "General" },
 ] as const;
+
+export const GALLERY_CATEGORIES = GALLERY_CATEGORY_OPTIONS.map((option) => option.value) as readonly string[];
