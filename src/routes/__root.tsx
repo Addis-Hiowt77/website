@@ -89,6 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "Addis Hiwot Charity Association is a nonprofit community platform for health, education, youth empowerment and transparent impact reporting.",
       },
+      { name: "google-site-verification", content: "6fH8es1qGr5quI18a9L1pNVHQuxZSpvjIl-klTIK0gU" },
       { name: "author", content: "Addis Hiwot Charity Association" },
       { property: "og:title", content: "Addis Hiwot Charity Association" },
       {
