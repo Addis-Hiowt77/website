@@ -4,9 +4,9 @@ import bloodDonationImage from "../assets/blood-donation.jpg";
 import genaChristmasImage from "../assets/gena-christmas.jpg";
 import youthCenterImage from "../assets/youth-center.jpg";
 import haymanotImage from "../assets/Haymanot.jpg";
-import heroOneImage from "../assets/IMG_20261114_191845_440.jpg";
-import heroTwoImage from "../assets/IMG_20261114_191845_364.jpg";
-import heroThreeImage from "../assets/IMG_20261114_191845_263.jpg";
+import heroOneImage from "../assets/hero1.jpg";
+import heroTwoImage from "../assets/hero2.jpg";
+import heroThreeImage from "../assets/hero3.jpg";
 import aboutImage from "../assets/461316137_3601787383375316_2225415764039493058_n.jpg";
 
 export const orgContent = {
