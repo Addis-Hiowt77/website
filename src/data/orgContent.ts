@@ -4,9 +4,9 @@ import bloodDonationImage from "../assets/blood-donation.jpg";
 import genaChristmasImage from "../assets/gena-christmas.jpg";
 import youthCenterImage from "../assets/youth-center.jpg";
 import haymanotImage from "../assets/Haymanot.jpg";
-import heroOneImage from "../assets/486719263_967029012287842_5500617692441106333_n.jpg";
-import heroTwoImage from "../assets/669837826_1450397553194730_19713135424558436_n.jpg";
-import heroThreeImage from "../assets/274350546_2918535201700541_3579691248301966267_n.jpg";
+import heroOneImage from "../assets/IMG_20261114_191845_440.jpg";
+import heroTwoImage from "../assets/IMG_20261114_191845_364.jpg";
+import heroThreeImage from "../assets/IMG_20261114_191845_263.jpg";
 import aboutImage from "../assets/461316137_3601787383375316_2225415764039493058_n.jpg";
 
 export const orgContent = {
@@ -413,7 +413,7 @@ export const orgContent = {
     phones: ["+251 91 830 0057", "+251 91 586 1262"],
     email: "2002addishiwot@gmail.com",
     mapEmbedUrl: "https://www.google.com/maps?q=University%20of%20Gondar%20Tewodros%20Campus%2C%20Gondar%2C%20Ethiopia&output=embed",
-    officeHours: "To be confirmed",
+    officeHours: "8AM to 6PM",
   },
   volunteer: {
     sectionTitle: "Join Addis Hiwot",
